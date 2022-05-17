@@ -13,4 +13,4 @@ print("my favourite novel is After and Before")
 print("my nickname is Kerry")
 print("my pets name is Snow")
 
-git config --global
+

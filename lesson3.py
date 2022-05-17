@@ -9,3 +9,4 @@ print(" you are " + str(age) + " years old ")
 food = input("What is your favourite food ? ")
 print(" I love ") +str(food) + " chapati "
 
+
