@@ -32,3 +32,8 @@ print(f"My name is {motocycle_owner} and I own {motocycle[1]} , plate_number[1]"
 #removing an item from a list
 motocycle.remove("suzuki")
 print(motocycle)
+
+fruits = ["apple" , "banana" , "guava" , "mango"]
+print(fruits)
+fruits[2] = 'orange'
+

@@ -11,7 +11,6 @@ yearOfBirth = 2003
 # strings
 my_first_name = "Harriet" 
 my_second_name = "Kerubo"
-
 schoolAttended = "Precious Blood"
 
 

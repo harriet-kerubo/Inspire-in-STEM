@@ -15,3 +15,8 @@ print(" The sum of x and y is " +str(sum_of))
 print(" The difference between x and y is " +str(diff))
 print(" The product of x and y is " +str(prod))
 print(" The quotient of x and y is " +str(quot))
+
+#tabs\t
+print("Monday\tTuesday\tWednesday\tThursday\tFriday\tSaturday\tSunday")
+print("Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday")
+

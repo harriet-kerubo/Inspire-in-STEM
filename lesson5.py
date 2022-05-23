@@ -27,6 +27,8 @@ txt = """ Holla!I am Kerubo Bacardi
 
 print (txt)          
 
-    
+fruits = ["apple" , "banana"]
+fruits[-1] [0]
+
 
 

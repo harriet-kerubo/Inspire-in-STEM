@@ -7,6 +7,6 @@ age = input("How old are you ? ")
 print(" you are " + str(age) + " years old ")
 
 food = input("What is your favourite food ? ")
-print(" I love ") +str(food) + " chapati "
+print(" I love ") +str(food) 
 
 

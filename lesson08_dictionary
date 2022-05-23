@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+#############
+#     Dictionaries
+#     Name : Harriet Kerubo
+#     Date : 23 /5 /2022
+
+
+
+# Intializing dictionaries
+student = {"Name":"Harriet","age":18 , "gender" : "female"}
+print(student["Name"])
+print(student["age"])
+print(student["gender"])
+student["Id.No"]="45678999"
+student["Hobby"]="football"
+student["Club"]="Man U"
+student["Colour"]="Black"
+student["Nickname"]="Kerry"
+student["Home"]="Syokimau"
+print(student)
+
+#staring with empty dictionaries
+student = {}
+ 
+ #Modifying values in a dictionary
+student["Name"] = "Martha"
+del student["Name"]
+print(student)

@@ -5,3 +5,8 @@ print(f"my name is {pupil[0]} and i am in {school[0]}")
 print(f"i am {pupil[1]} and i school at {school[1]}")
 for pupil in pupil:
     print(f"hello i am pupil {pupil}")
+
+
+fruits = ["apple" , "banana" , "guava" , "mango"]
+print(fruits)
+fruits[2] = 'orange'
