@@ -1,3 +1,4 @@
+ #!/usr/bin/python
 #Write a programme to withdraw 25000 if the account balance is btwn 1000000 to 200000
 #30% if acc balance is btwn 500000 and 1M
 #above 1000000 deduct 700000

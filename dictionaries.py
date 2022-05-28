@@ -1,3 +1,4 @@
+ #!/usr/bin/python
 #A dictionary is a collection of key value pairs
 #syntax: dictionary = {'key' : 'value'}
 names = {'John','Mary'}
@@ -61,7 +62,15 @@ while i < len(colors):
         print(colors[4].upper())
         i +=1
 
+ #Using get to access the value in a dictionary
+print(person.get("password',the 'location' key is non-exixtsent"))
+        
+mary_fav_food = ['beef' , 'chicken' , 'vegetable']
+jane_fav_food = ['rice' , 'ugali' , 'potatoes']
 
-
-
-
+#dictionary containing the above
+food = {
+      'mary' : [],
+      'jane' : [],
+}
+print(food) 
