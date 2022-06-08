@@ -1,0 +1,12 @@
+This is a normal text file
+Learning python is funnnnnnnnnnnnnnnnn
+Today is a windy day
+
+f = open("lesson.txt")
+r = open("lesson.txt","w")
+
+r   Opens a file for reading. (default)
+w   Opens a file for writing. Creates a new file if it does not exist
+x   Opens a file for exclusive creation. If the file
+a   Opens a file for appending at the end of the
+t   Opens in text mode
