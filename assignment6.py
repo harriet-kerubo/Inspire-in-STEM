@@ -18,66 +18,87 @@ wn.tracer(0)
 #Create our drawing pen
 pen = turtle.Turtle()
 pen.hideturtle()
+
+#Importing modules
+from turtle import Turtle,Screen
+import datetime
+
+#Creating window
+window = Screen()
+window.title("Analog clock by Harriet")
+window.bgcolor("black")
+window.setup(width= 400,height=300)
+
+#Creating clock face
+circle = Turtle()
+circle.penup()
+circle.pencolor("#118893")
+circle.speed(0)
+circle.pensize(20)
+circle.hideturtle()
+circle.goto(0,-390)
+circle.pendown()
+circle.fillcolor("#17202A")
+circle.begin_fill()
+circle.circle(300)
+circle.end_fill()
+
+#creating minute hand 
+hHand =Turtle()
+hHand.shape("arrow")
+hHand.color("yellow")
+hHand.speed(10)
+hHand.shapesize(stretch_wid=0.4, stretch_len=26)
+
+#creating minute hand
+mHand = Turtle()
+mHand.shape("arrow")
+mHand.color("white")
+mHand.speed(10)
+mHand.shapesize(stretch_wid=0.4, stretch_len=26)
+
+#creating second hand
+sHand = Turtle()
+sHand.shape("arrow")
+sHand.color("pink")
+sHand.speed(10)
+sHand.shapesize(stretch_wid=0.4, stretch_len=26)
+
+#Creating center circle
+centerCircle = Turtle()
+centerCircle.shape("circle")
+#setting color to white
+centerCircle.color("white")
+centerCircle.shapesize(stretch_wid=1.5, stretch_len=1.5)
+
+#numbers with pen
+pen = Turtle()
 pen.speed(0)
 pen.pensize(3)
 
-def draw_clock(h , m , s , pen):
-
-    #Draw clock face 
-    pen.up()
-    pen.goto(0, 210)
+def draw_clock(h,m,s,pen):
+    pen.penup()
+    pen.goto(0,210)
     pen.setheading(180)
-    pen.color("purple")
+    pen.color("green")
     pen.pendown()
-    pen.circle(250)
+    pen.circle(210)
+    
 
-#Drawing lines for the hours
     pen.penup()
     pen.goto(0,0)
     pen.setheading(90)
 
-for _ in range(12):
+for clock in range(12):
     pen.fd(190)
     pen.pendown()
     pen.fd(20)
-    pen.penup()
+    pen.penup() 
     pen.goto(0,0)
-    pen.rt(30)
-    
-#Drawing the hour hand
-    pen.penup()
-    pen.goto(0,0)
-    pen.color("yellow")
-    pen.setheading(90)    
-    angle = (10 / 12) * 360
-    pen.rt(angle)
-    pen.pendown()
-    pen.fd(100)
-
-#Drawing the minute hand
-    pen.penup()
-    pen.goto(0,0)
-    pen.color("white")
-    pen.setheading(90)
-    angle = (15 / 60) *360
-    pen.rt(angle)
-    pen.pendown()
-    pen.fd(30)
-
-#Drawing the second hand
-    pen.penup()
-    pen.goto(0,0)
-    pen.color("blue")
-    pen.setheading(90)
-    angle = (50 / 60) * 360
-    pen.rt(angle)
-    pen.pendown()
-    pen.fd(30)
-
-
-draw_clock(10, 15 , 0, pen)
+    pen.rt(6)
 
 
 
+wn.mainloop()
 
-wn.mainloop()     
+
