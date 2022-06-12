@@ -24,7 +24,7 @@ def draw_clock(h,m,s,pen):
     pen.color('green')
     pen.pendown()
     pen.circle(210)
-    
+
 #drawing hour hand
     pen.up()
     pen.goto(0,0)
@@ -38,4 +38,3 @@ def draw_clock(h,m,s,pen):
         pen.goto(0,0)
         pen.rt(30)
 
-wn.mainloop()
